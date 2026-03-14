@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitraux d'Art & Cadrans Solaires en Isère | Atelier Ombre Jaille</title>
+
+    <meta name="description" content="Découvrez l'Atelier Ombre Jaille en Isère : expertise artisanale en création et restauration de cadrans solaires traditionnels et vitraux d'art par Didier Cottier.">
+    <meta property="og:title" content="Ombre Jaille | Maître Verrier & Gnomoniste en Isère">
+    <meta property="og:description" content="Création et restauration de vitraux et cadrans solaires. Un savoir-faire artisanal unique entre temps et lumière.">
+    <meta property="og:image" content="images/background.png"> 
+    <meta property="og:type" content="website">
+    <meta name="keywords" content="vitrail, cadran solaire, artisanat d'art, Isère, Montalieu-Vercieu, restauration patrimoine, gnomoniste, maître verrier">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="main-nav"
+        class="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-5xl glass rounded-full px-8 py-4 flex justify-between items-center transition-all duration-500">
+        <div class="flex items-center">
+            <a href="index.html" class="flex items-center group">
+                <img id="nav-logo"
+                    src="https://ombrejaille.fr/wp-content/uploads/2025/05/cropped-cropped-IMG_1472-scaled-e1747744814830-1.png"
+                    alt="Logo Ombre Jaille"
+                    class="h-12 md:h-16 w-auto object-contain transition-all duration-300 invert brightness-[1.2]">
+            </a>
+        </div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest">
+            <li><a href="atelier.html" class="hover:text-orange-400 transition">L'Atelier</a></li>
+            <li><a href="cadrans.html" class="hover:text-orange-400 transition">Nos cadrans solaires</a></li>
+            <li><a href="vitraux.html" class="hover:text-orange-400 transition">Nos vitraux</a></li>
+            <li><a href="formations.html" class="hover:text-orange-400 transition">Formations</a></li>
+        </ul>
+        <a href="contact.html" class="bg-white text-black px-6 py-2 rounded-full text-sm font-bold hover:bg-orange-400 transition">Contact</a>
+    </nav>
+
+    <section class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+
+        <img src="images/background.png" alt="Vitraux d'Ombre Jaille - Détail d'un personnage"
+            class="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:scale-105 transition duration-700"
+            style="filter: brightness(0.7) contrast(1.1);">
+
+        <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-[#0a0a0a]"></div>
+
+        <div class="relative z-10 text-center px-4 max-w-7xl mx-auto">
+
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 leading-tight uppercase tracking-tighter">
+                Graver le <span class="serif italic font-light text-orange-300">Temps</span><br>
+                Sculpter la <span class="serif italic font-light text-orange-300">Lumière</span>
+            </h1>
+
+            <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12 text-gray-200 leading-relaxed">
+                L'art ancestral du vitrail et du cadran solaire, réinventé pour les architectures de demain.
+                Découvrez une poésie intemporelle pour votre espace.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                <a href="restauration.html"
+                    class="bg-orange-500 hover:bg-orange-600 text-white px-12 py-5 rounded-xl font-bold text-lg transition shadow-xl shadow-orange-500/20 uppercase tracking-widest text-sm">
+                    Découvrir l'Atelier
+                </a>
+                <a href="formations.html"
+                    class="glass text-white px-12 py-5 rounded-xl font-bold text-lg hover:bg-white/10 transition uppercase tracking-widest text-sm">
+                    Réserver un Stage
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="relative bg-[#fdfbf7]">
+        <div id="scroll-track" class="absolute left-[8%] pointer-events-none"
+            style="z-index: 1; top: 0; bottom: 0; width: 2px;">
+            <div class="h-full w-full bg-slate-200/60"></div>
+
+            <div id="scroll-line"
+                class="absolute top-0 left-0 w-full bg-orange-500 transition-all duration-150 ease-out"
+                style="height: 0%;"></div>
+
+            <div id="scroll-dot"
+                class="absolute left-1/2 -translate-x-1/2 w-4 h-4 bg-orange-500 rounded-full shadow-[0_0_20px_rgba(249,115,22,0.8)]"
+                style="top: 0%; opacity: 0;"></div>
+        </div>
+
+        <section id="atelier" class="relative py-24 px-6 overflow-hidden">
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                    <div class="relative">
+                        <div
+                            class="absolute -top-10 -left-10 w-40 h-40 bg-orange-200/50 rounded-full blur-3xl opacity-60">
+                        </div>
+
+                        <h2
+                            class="text-4xl md:text-6xl font-black uppercase tracking-tighter leading-[1.1] italic serif text-slate-900">
+                            Cadrans solaires <br>
+                            <span class="text-orange-500">& vitraux d’art</span> <br>
+                            <span class="text-blue-500/80">en Isère</span>
+                        </h2>
+                        <div class="mt-8 h-1 w-24 bg-orange-500"></div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <p class="text-xl md:text-2xl text-slate-800 font-bold leading-tight">
+                            Artisan cadranier et verrier d’art, l’Atelier Ombre-Jaille est spécialisé dans la création
+                            et la
+                            restauration.
+                        </p>
+
+                        <div class="space-y-4 text-slate-600 leading-relaxed text-lg">
+                            <p>
+                                Situé en <span class="font-bold text-orange-600">Isère</span>, au cœur du Dauphiné,
+                                l’atelier intervient sur tout le territoire, notamment sur des bâtiments anciens et des
+                                sites patrimoniaux.
+                            </p>
+                            <p>
+                                Nous allions rigueur historique et esthétique contemporaine pour des lieux privés et
+                                publics.
+                            </p>
+                        </div>
+
+                        <div
+                            class="inline-flex items-center gap-3 px-5 py-2 bg-white border border-slate-200 shadow-sm rounded-full text-xs font-bold uppercase tracking-widest text-orange-600">
+                            <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+                            Intervention France entière
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="creations" class="py-24 px-6 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto relative z-10">
+                <div
+                    class="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-400/10 rounded-full blur-[120px] pointer-events-none">
+                </div>
+
+                <div class="max-w-7xl mx-auto relative z-10">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+
+                        <div
+                            class="md:col-span-8 group relative overflow-hidden rounded-[2.5rem] bg-[#facc15] border border-yellow-200/50 shadow-2xl shadow-yellow-900/10 flex flex-col min-h-[550px]">
+
+                            <img src="images/prévisu1.webp" alt="Tracé de cadran solaire"
+                                class="absolute inset-0 w-full h-full object-cover mix-blend-multiply opacity-80 group-hover:scale-105 transition duration-1000">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-[#854d0e] via-transparent to-transparent">
+                            </div>
+
+                            <div class="relative mt-auto p-8 md:p-12">
+                                <span
+                                    class="text-white font-bold uppercase tracking-[0.4em] text-xs mb-4 block drop-shadow-md">Gnomonique
+                                    & Fresque</span>
+                                <h3
+                                    class="text-4xl md:text-5xl font-black mb-6 italic serif text-white tracking-tighter">
+                                    Nos
+                                    Cadrans solaires</h3>
+                                <p class="text-white max-w-2xl leading-relaxed text-lg mb-8 opacity-90">
+                                    Nos cadrans sont tracés selon les règles de la gnomonique et peints à fresque sur
+                                    enduit
+                                    à
+                                    la chaux. Des instruments éducatifs conçus pour défier les siècles.
+                                </p>
+                                <a href="restauration.html"
+                                    class="inline-flex items-center gap-4 bg-white/20 hover:bg-white backdrop-blur-xl text-white hover:text-yellow-800 px-8 py-4 rounded-xl font-bold transition-all duration-300 uppercase text-xs tracking-[0.2em] border border-white/30">
+                                    Explorer l'art du temps
+                                    <span class="group-hover:translate-x-2 transition-transform">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="md:col-span-4 group relative overflow-hidden rounded-[2.5rem] bg-[#1e40af] border border-blue-400/20 shadow-2xl shadow-blue-900/20 flex flex-col min-h-[550px]">
+
+                            <img src="images/prévisu2.webp" alt="Détail vitrail"
+                                class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition duration-1000">
+
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-[#1e3a8a] via-[#1e3a8a]/60 to-transparent">
+                            </div>
+
+                            <div class="relative mt-auto p-8">
+                                <span
+                                    class="text-blue-300 font-bold uppercase tracking-[0.4em] text-[10px] mb-3 block">Tradition
+                                    & Lumière</span>
+                                <h3 class="text-3xl font-black mb-4 italic serif uppercase text-white">Nos Vitraux</h3>
+                                <p class="text-blue-100/70 text-sm leading-relaxed mb-8">
+                                    Verre soufflé et peinture à 630°C. Une alchimie entre plomb et lumière pour sublimer
+                                    votre
+                                    architecture.
+                                </p>
+                                <a href="restauration.html"
+                                    class="inline-flex items-center gap-4 bg-blue-400/20 hover:bg-blue-400 backdrop-blur-xl text-white px-6 py-3 rounded-xl font-bold transition-all duration-300 uppercase text-[10px] tracking-[0.2em] border border-blue-400/30">
+                                    Voir les projets
+                                    <span class="group-hover:translate-x-2 transition-transform">→</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div
+                            class="md:col-span-12 group relative overflow-hidden rounded-[3rem] bg-gradient-to-r from-orange-500 to-orange-600 flex flex-col md:flex-row shadow-[0_20px_50px_rgba(249,115,22,0.3)]">
+
+                            <div class="md:w-1/2 h-72 md:h-auto overflow-hidden relative">
+                                <img src="images/formation.webp" alt="Stage atelier"
+                                    class="w-full h-full object-cover mix-blend-multiply opacity-90 group-hover:scale-105 transition duration-1000">
+                                <div class="absolute inset-0 bg-gradient-to-r from-orange-500/20 to-transparent"></div>
+                            </div>
+
+                            <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center text-white relative">
+                                <div
+                                    class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-2xl">
+                                </div>
+
+                                <div class="flex justify-between items-start mb-8">
+                                    <h3
+                                        class="text-5xl font-black italic serif uppercase leading-none tracking-tighter text-black">
+                                        Nos<br>Formations</h3>
+                                    <span
+                                        class="bg-black/20 backdrop-blur-md text-white border border-white/20 px-4 py-1 rounded-full text-[10px] font-bold tracking-widest uppercase">L'expérience
+                                        du geste</span>
+                                </div>
+
+                                <ul class="space-y-4 text-black/80 font-semibold mb-10">
+                                    <li class="flex items-center gap-3"><span
+                                            class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                                        Stages d’initiation ou perfectionnement (2 à 5 jours)</li>
+                                    <li class="flex items-center gap-3"><span
+                                            class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                                        Ateliers pédagogiques adultes ou enfants</li>
+                                    <li class="flex items-center gap-3"><span
+                                            class="w-1.5 h-1.5 bg-black rounded-full"></span>
+                                        Conférences et expositions dès 1h30</li>
+                                    <li class="flex items-center gap-3 font-black italic border-b border-black/10 pb-2">
+                                        Chaque
+                                        participant conserve sa réalisation.</li>
+                                </ul>
+
+                                <a href="formations.html"
+                                    class="inline-flex items-center justify-center gap-4 bg-black text-white px-10 py-5 rounded-2xl font-black hover:bg-zinc-900 transition-all shadow-xl uppercase tracking-widest text-sm group-hover:translate-y-[-2px]">
+                                    Rejoindre l'Atelier
+                                    <span class="group-hover:rotate-45 transition-transform text-orange-500">↗</span>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="relative py-32 px-6 overflow-hidden bg-[#1e40af]">
+    <div class="absolute inset-0 opacity-20 mix-blend-overlay pointer-events-none"></div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+        <div class="absolute -top-20 left-1/2 -translate-x-1/2 text-[15rem] serif text-white/[0.03] select-none pointer-events-none">
+            XII
+        </div>
+        
+        <blockquote class="relative">
+            <p class="text-3xl md:text-5xl serif italic text-orange-100 leading-tight mb-10 drop-shadow-sm">
+                « L’heureux propriétaire d’une horloge solaire détient un <span class="text-orange-400 not-italic font-bold">fragment d’éternité</span>. »
+            </p>
+            
+            <footer class="flex flex-col items-center">
+                <div class="h-px w-16 bg-orange-400/50 mb-6"></div>
+                <cite class="text-sm font-bold uppercase tracking-[0.4em] text-orange-200/60 not-italic">
+                    — Lux Mea Lex
+                </cite>
+            </footer>
+        </blockquote>
+    </div>
+
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-orange-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+</section>
+
+
+<section id="contact" class="relative bg-slate-900 overflow-hidden">
+    <div class="flex flex-col md:flex-row min-h-[600px]">
+        
+        <div class="md:w-1/2 relative h-80 md:h-auto overflow-hidden">
+            <img src="images/contact.webp" alt="Artisan au travail - Ombre Jaille" 
+                 class="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000 scale-105">
+            <div class="absolute inset-0 bg-gradient-to-r from-slate-900/40 to-transparent md:bg-gradient-to-l"></div>
+        </div>
+
+        <div class="md:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-[#fdfbf7]">
+            <span class="text-orange-600 font-bold uppercase tracking-[0.3em] text-xs mb-4">Contact & Devis</span>
+            
+            <h2 class="text-4xl md:text-6xl font-black text-slate-900 serif italic mb-6 leading-tight">
+                Un projet, <br>une question ?
+            </h2>
+            
+            <p class="text-slate-600 text-lg mb-10 leading-relaxed max-w-md">
+                Pour toute demande de renseignement, devis personnalisé ou prise de contact, l'atelier est à votre écoute pour donner vie à vos idées.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-6">
+                <a href="mailto:votre@email.fr" 
+                   class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-black hover:bg-orange-600 transition-all shadow-xl shadow-slate-900/20 uppercase tracking-widest text-sm flex items-center justify-center gap-3 group">
+                    Contactez-moi
+                    <span class="group-hover:translate-x-2 transition-transform">→</span>
+                </a>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-slate-200">
+                <p class="text-slate-400 text-[10px] uppercase tracking-[0.3em] font-bold mb-6">Suivre l'actualité de l'atelier</p>
+                <div class="flex gap-8">
+                    <a href="#" class="text-slate-900 hover:text-orange-600 transition-colors font-bold text-sm uppercase tracking-widest flex items-center gap-2">
+                        Instagram
+                    </a>
+                    <a href="https://www.facebook.com/ombrejaille/" class="text-slate-900 hover:text-blue-600 transition-colors font-bold text-sm uppercase tracking-widest flex items-center gap-2">
+                        Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="border-t border-white/10 py-12 text-center text-gray-500 text-sm">
+        <p>&copy; 2026 Ombre Jaille — Artisanat d'Art Français.</p>
+    </footer>
+
+<div class="fixed right-6 top-1/2 -translate-y-1/2 z-[100] flex flex-col gap-5">
+    
+    <a href="https://instagram.com/votrecompte" target="_blank" class="group flex items-center justify-end gap-3">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-300 bg-orange-600 px-3 py-1 rounded-full shadow-lg translate-x-2 group-hover:translate-x-0">
+            Instagram
+        </span>
+        <div class="w-12 h-12 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] group-hover:bg-orange-600 group-hover:scale-110 transition-all duration-300">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+        </div>
+    </a>
+
+    <a href="https://www.facebook.com/ombrejaille/" target="_blank" class="group flex items-center justify-end gap-3">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white opacity-0 group-hover:opacity-100 transition-all duration-300 bg-blue-700 px-3 py-1 rounded-full shadow-lg translate-x-2 group-hover:translate-x-0">
+            Facebook
+        </span>
+        <div class="w-12 h-12 bg-slate-900 border border-white/10 rounded-full flex items-center justify-center shadow-[0_10px_30px_rgba(0,0,0,0.3)] group-hover:bg-blue-700 group-hover:scale-110 transition-all duration-300">
+            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+        </div>
+    </a>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

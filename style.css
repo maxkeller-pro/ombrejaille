@@ -1,0 +1,109 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+
+#atelier,
+#creations {
+    background: transparent !important;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05) !important;
+    /* Très léger */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Effet de grain pour un look "Artisan" premium */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+body {
+    background-color: #1e40af; /*1a202c*/
+    color: #ffffff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Style pour les cartes artisanales */
+.artisan-card {
+    background-color: #fdfbf7;
+    /* Fond Blanc Cassé / Chaux */
+    border: 1px solid #e2e8f0;
+    color: #111827;
+    /* Texte sombre pour la lisibilité */
+}
+
+/* Effet de lumière diffuse en arrière-plan */
+.light-glow {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    /* Couleur ambre pour rappeler le soleil */
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.15) 0%, rgba(15, 23, 42, 0) 70%);
+    z-index: -1;
+    filter: blur(60px);
+}
+
+/* Une variante bleu ciel pour les vitraux */
+.blue-glow {
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bento-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bento-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.hero-gradient {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #0a0a0a);
+}
+
+
+.fixed div.bg-slate-900 {
+    backdrop-filter: blur(8px);
+    background-color: rgba(15, 23, 42, 0.9);
+    /* Slate-900 avec 90% d'opacité */
+}
+
+/* Style pour les bulles de réseaux sociaux flottantes */
+.social-float-btn {
+    background-color: #0f172a !important; /* Slate-900 très profond */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+}
+
+.social-float-btn:hover {
+    background-color: #ea580c !important; /* Orange-600 au survol */
+    transform: scale(1.1) translateX(-5px);
+}
