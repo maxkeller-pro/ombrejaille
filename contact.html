@@ -97,72 +97,69 @@
             </div>
         </div>
     </section>
-    C'est une excellente idée. Puisque vous avez supprimé le formulaire, transformer la page contact en un véritable
-    "hub" social et informatif donne une image très moderne et accessible de votre atelier.
-
-    Voici comment intégrer vos réseaux sociaux (Instagram et Facebook) de manière élégante et imposante juste avant la
-    carte Google Maps.
-    1. Le Code à ajouter à contact.html
-
-    Insérez ce bloc juste après la section INFOS DE CONTACT (les 3 cartes) et avant la SECTION MAPS :
-    HTML
 
     <section class="pb-24 px-6">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-black serif italic text-slate-900">Suivre l'actualité de l'Atelier</h2>
-                <p class="text-slate-500 uppercase tracking-widest text-xs mt-2 font-bold">Coulisses, créations et
-                    chantiers en cours</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="https://www.instagram.com/ombrejaille/" target="_blank"
-                    class="group relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] p-1 shadow-xl transition-transform hover:-translate-y-2">
-                    <div class="bg-white rounded-[2.8rem] p-10 h-full flex items-center justify-between">
-                        <div class="flex items-center gap-6">
-                            <div
-                                class="w-16 h-16 bg-gradient-to-tr from-[#f09433] to-[#bc1888] rounded-2xl flex items-center justify-center text-white shadow-lg">
-                                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-                                </svg>
-                            </div>
-                            <div class="text-left">
-                                <p class="text-xs font-black uppercase tracking-widest text-slate-400">Instagram</p>
-                                <p class="text-2xl font-black text-slate-900">@ombrejaille</p>
-                            </div>
-                        </div>
-                        <span
-                            class="bg-slate-100 text-slate-900 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest group-hover:bg-slate-900 group-hover:text-white transition-colors">Voir
-                            le profil</span>
-                    </div>
-                </a>
-
-                <a href="https://www.facebook.com/ombrejaille/" target="_blank"
-                    class="group relative overflow-hidden rounded-[3rem] bg-[#1877F2] p-1 shadow-xl transition-transform hover:-translate-y-2">
-                    <div class="bg-white rounded-[2.8rem] p-10 h-full flex items-center justify-between">
-                        <div class="flex items-center gap-6">
-                            <div
-                                class="w-16 h-16 bg-[#1877F2] rounded-2xl flex items-center justify-center text-white shadow-lg">
-                                <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                </svg>
-                            </div>
-                            <div class="text-left">
-                                <p class="text-xs font-black uppercase tracking-widest text-slate-400">Facebook</p>
-                                <p class="text-2xl font-black text-slate-900">Atelier Ombre Jaille</p>
-                            </div>
-                        </div>
-                        <span
-                            class="bg-slate-100 text-slate-900 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest group-hover:bg-[#1877F2] group-hover:text-white transition-colors">S'abonner</span>
-                    </div>
-                </a>
-            </div>
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-black serif italic text-slate-900">Suivre l'actualité de l'Atelier</h2>
+            <p class="text-slate-500 uppercase tracking-widest text-xs mt-2 font-bold">Coulisses, créations et chantiers en cours</p>
         </div>
-    </section>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <a href="https://www.instagram.com/ombrejaille/" target="_blank"
+                class="group relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-[#f09433] via-[#dc2743] to-[#bc1888] p-1 shadow-xl transition-transform hover:-translate-y-2">
+                <div class="bg-white rounded-[2.8rem] p-8 h-full flex flex-col justify-between items-center text-center">
+                    <div class="w-16 h-16 bg-gradient-to-tr from-[#f09433] to-[#bc1888] rounded-2xl flex items-center justify-center text-white shadow-lg mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Instagram</p>
+                        <p class="text-xl font-black text-slate-900 mb-6">@ombrejaille</p>
+                    </div>
+                    <span class="bg-slate-100 text-slate-900 px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest group-hover:bg-slate-900 group-hover:text-white transition-colors">Voir le profil</span>
+                </div>
+            </a>
+
+            <a href="https://www.facebook.com/ombrejaille/" target="_blank"
+                class="group relative overflow-hidden rounded-[3rem] bg-[#1877F2] p-1 shadow-xl transition-transform hover:-translate-y-2">
+                <div class="bg-white rounded-[2.8rem] p-8 h-full flex flex-col justify-between items-center text-center">
+                    <div class="w-16 h-16 bg-[#1877F2] rounded-2xl flex items-center justify-center text-white shadow-lg mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">Facebook</p>
+                        <p class="text-xl font-black text-slate-900 mb-6">Atelier Ombre Jaille</p>
+                    </div>
+                    <span class="bg-slate-100 text-slate-900 px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest group-hover:bg-[#1877F2] group-hover:text-white transition-colors">S'abonner</span>
+                </div>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCoKt3-clna2fcMaHqBZruJg" target="_blank"
+                class="group relative overflow-hidden rounded-[3rem] bg-[#FF0000] p-1 shadow-xl transition-transform hover:-translate-y-2">
+                <div class="bg-white rounded-[2.8rem] p-8 h-full flex flex-col justify-between items-center text-center">
+                    <div class="w-16 h-16 bg-[#FF0000] rounded-2xl flex items-center justify-center text-white shadow-lg mb-4">
+                        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400">YouTube</p>
+                        <p class="text-xl font-black text-slate-900 mb-6">Ombre Jaille TV</p>
+                    </div>
+                    <span class="bg-slate-100 text-slate-900 px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest group-hover:bg-[#FF0000] group-hover:text-white transition-colors">Regarder</span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
     <section class="h-[500px] w-full bg-slate-200 relative">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.6297159542414!2d5.4182847999999995!3d45.8186737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478b47d8e4265b75%3A0x4255c92dbbe5fdfb!2sAtelier%20OmbreJaille!5e0!3m2!1sfr!2sfr!4v1773517546664!5m2!1sfr!2sfr"
