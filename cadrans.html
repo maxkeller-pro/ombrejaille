@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadrans Solaires Artisanaux | Ombre Jaille</title>
+    <title>Cadrans Solaires : Création et Restauration | Atelier Ombre Jaille</title>
+
+    <meta name="description" content="Spécialiste du cadran solaire artisanal : découvrez nos créations uniques peintes à fresque (chaux aérienne et pigments naturels). De la gnomonique de précision à la restauration de cadrans anciens, nous redonnons vie au temps solaire.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
@@ -132,6 +134,29 @@
         </div>
     </section>
 
+    <section class="py-24 px-6 bg-slate-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-orange-600 font-bold uppercase tracking-[0.3em] text-xs">Pédagogie</span>
+                <h2 class="text-4xl md:text-5xl font-black serif text-slate-900 mt-2">Comprendre son fonctionnement</h2>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">
+                    Découvrez en images comment la lumière du soleil interagit avec le tracé gnomonique pour révéler l'heure exacte.
+                </p>
+            </div>
+
+            <div class="relative w-full rounded-[2rem] overflow-hidden shadow-2xl border-[12px] border-white bg-slate-200" style="aspect-ratio: 16/9;">
+                <iframe 
+                    class="absolute inset-0 w-full h-full"
+                    src="https://www.youtube-nocookie.com/embed/Ube5srOcmmA?rel=0&showinfo=0" 
+                    title="Comprendre le cadran solaire" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <section class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -248,65 +273,65 @@
     </div>
 
     <script>
-    let currentImageIndex = 0;
-    let allImages = [];
+        let currentImageIndex = 0;
+        let allImages = [];
 
-    document.addEventListener('DOMContentLoaded', () => {
-        // On récupère toutes les sources d'images de la galerie
-        const galleryItems = document.querySelectorAll('.group');
-        allImages = Array.from(document.querySelectorAll('.group img')).map(img => img.src);
+        document.addEventListener('DOMContentLoaded', () => {
+            // On récupère toutes les sources d'images de la galerie
+            const galleryItems = document.querySelectorAll('.group');
+            allImages = Array.from(document.querySelectorAll('.group img')).map(img => img.src);
 
-        galleryItems.forEach((item, index) => {
-            item.style.cursor = 'zoom-in';
-            item.onclick = function(e) {
-                e.preventDefault();
-                currentImageIndex = index;
-                openLightbox(allImages[currentImageIndex]);
-            };
+            galleryItems.forEach((item, index) => {
+                item.style.cursor = 'zoom-in';
+                item.onclick = function (e) {
+                    e.preventDefault();
+                    currentImageIndex = index;
+                    openLightbox(allImages[currentImageIndex]);
+                };
+            });
         });
-    });
 
-    function openLightbox(src) {
-        const lightbox = document.getElementById('lightbox');
-        const img = document.getElementById('lightbox-img');
-        img.src = src;
-        lightbox.classList.remove('hidden');
-        lightbox.classList.add('flex');
-        document.body.style.overflow = 'hidden';
-    }
+        function openLightbox(src) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            img.src = src;
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
 
-    function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        lightbox.classList.add('hidden');
-        lightbox.classList.remove('flex');
-        document.body.style.overflow = 'auto';
-    }
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
 
-    function changeImage(direction) {
-        currentImageIndex += direction;
-        
-        // Bouclage (si on dépasse la fin, on revient au début)
-        if (currentImageIndex >= allImages.length) currentImageIndex = 0;
-        if (currentImageIndex < 0) currentImageIndex = allImages.length - 1;
-        
-        document.getElementById('lightbox-img').src = allImages[currentImageIndex];
-    }
+        function changeImage(direction) {
+            currentImageIndex += direction;
 
-    // Fermeture si on clique à côté de l'image
-    function handleOutsideClick(e) {
-        if (e.target.id === 'lightbox') closeLightbox();
-    }
+            // Bouclage (si on dépasse la fin, on revient au début)
+            if (currentImageIndex >= allImages.length) currentImageIndex = 0;
+            if (currentImageIndex < 0) currentImageIndex = allImages.length - 1;
 
-    // Navigation au clavier (Flèches et Echap)
-    document.addEventListener('keydown', (e) => {
-        if (document.getElementById('lightbox').classList.contains('hidden')) return;
-        
-        if (e.key === "ArrowRight") changeImage(1);
-        if (e.key === "ArrowLeft") changeImage(-1);
-        if (e.key === "Escape") closeLightbox();
-    });
-</script>
-<script src="script.js"></script>
+            document.getElementById('lightbox-img').src = allImages[currentImageIndex];
+        }
+
+        // Fermeture si on clique à côté de l'image
+        function handleOutsideClick(e) {
+            if (e.target.id === 'lightbox') closeLightbox();
+        }
+
+        // Navigation au clavier (Flèches et Echap)
+        document.addEventListener('keydown', (e) => {
+            if (document.getElementById('lightbox').classList.contains('hidden')) return;
+
+            if (e.key === "ArrowRight") changeImage(1);
+            if (e.key === "ArrowLeft") changeImage(-1);
+            if (e.key === "Escape") closeLightbox();
+        });
+    </script>
+    <script src="script.js"></script>
 
 </body>
 
