@@ -1,3 +1,7 @@
+const menuBtn = document.getElementById('menu-btn');
+const menuLinks = document.getElementById('menu-links');
+const spans = menuBtn.querySelectorAll('span');
+
 window.addEventListener('load', () => {
     updateScrollEffects(); // Premier calcul précis une fois les images chargées
 });
@@ -77,4 +81,17 @@ document.querySelectorAll('.bento-item').forEach(el => {
     el.style.transform = "translateY(20px)";
     el.style.transition = "all 0.6s ease-out";
     observer.observe(el);
+});
+
+menuBtn.addEventListener('click', () => {
+    // Affiche/Masque le menu
+    menuLinks.classList.toggle('hidden');
+    menuLinks.classList.toggle('flex');
+
+    // Animation du hamburger en croix
+    spans[0].classList.toggle('rotate-45');
+    spans[0].classList.toggle('translate-y-[1px]');
+    spans[1].classList.toggle('opacity-0');
+    spans[2].classList.toggle('-rotate-45');
+    spans[2].classList.toggle('-translate-y-[1px]');
 });
