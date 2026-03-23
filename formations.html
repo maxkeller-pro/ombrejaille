@@ -111,27 +111,31 @@
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-[#fdfbf7]">
+    <section class="py-24 px-6 bg-white">
         <div class="max-w-7xl mx-auto">
-            <h2 class="text-5xl font-black serif italic text-slate-900 text-center mb-16">Galerie</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="group relative aspect-square overflow-hidden rounded-[2rem] bg-slate-200 cursor-pointer">
-                    <img src="images/formations/gal-1.webp" alt="Atelier" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
-                <div class="group relative aspect-square overflow-hidden rounded-[2rem] bg-slate-200 cursor-pointer">
-                     <img src="images/formations/gal-2.webp" alt="Transmission" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
-                <div class="group relative aspect-square overflow-hidden rounded-[2rem] bg-slate-200 cursor-pointer">
-                    <img src="" alt="Atelier enfants" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                </div>
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-black serif italic text-slate-900 mb-4">Galerie de réalisations</h2>
+                <div class="h-1 w-24 bg-orange-500 mx-auto"></div>
             </div>
+
+            <div id="gallery-formations" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
         </div>
     </section>
 
-    <div id="lightbox" class="fixed inset-0 z-[100] bg-slate-950/95 hidden flex items-center justify-center p-4 cursor-zoom-out" onclick="closeLightbox()">
-        <button onclick="closeLightbox()" class="absolute top-10 right-10 text-white text-5xl font-light">&times;</button>
-        <img id="lightbox-img" src="" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain">
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-slate-950/95 hidden flex items-center justify-center p-4"
+        onclick="handleOutsideClick(event)">
+        <button onclick="closeLightbox()"
+            class="absolute top-10 right-10 text-white text-5xl font-light z-[110] hover:text-orange-400 transition">&times;</button>
+
+        <button onclick="changeImage(-1)"
+            class="absolute left-4 md:left-10 text-white text-5xl p-4 z-[110] hover:text-orange-400 transition">❮</button>
+
+        <img id="lightbox-img" src=""
+            class="max-w-full max-h-[90vh] rounded-lg shadow-2xl object-contain transition-all duration-300">
+
+        <button onclick="changeImage(1)"
+            class="absolute right-4 md:right-10 text-white text-5xl p-4 z-[110] hover:text-orange-400 transition">❯</button>
     </div>
 
     <footer class="bg-slate-950 text-white py-12 text-center text-sm border-t border-white/5">
